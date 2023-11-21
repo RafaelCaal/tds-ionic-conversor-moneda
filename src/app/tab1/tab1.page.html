@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      DivisApp 22005973
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -13,5 +13,20 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+<!-- <app-explore-container name="Tab 1 page"></app-explore-container> -->
+
+<!-- Solicitud de cantidad -->
+<Div>
+Ingrese la cantidad en Quetzales:
+<br><br>
+<input type = "text" [(ngModel)] = "cantidad" placeholder="Q 0.0" pattern="[0-9]+([\.,][0-9]{1,2})?">
+<br>
+La cantidad en Dolares Americanos es:
+<br>
+<br>
+<output type = "text" >USD {{resultado}}</output>
+<br><br>
+<ion-button (click) = "calcular()">Calcular</ion-button><br>
+</Div>
+
 </ion-content>
